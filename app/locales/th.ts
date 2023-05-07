@@ -2,37 +2,37 @@ import { SubmitKey } from "../store/config";
 import type { LocaleType } from "./index";
 
 const th: LocaleType = {
-  WIP: "Coming Soon...",
+  WIP: "เร็วๆนี้...",
   Error: {
     Unauthorized:
-      "Unauthorized access, please enter access code in settings page.",
+      "ไม่อนุญาติให้เข้าถึง กรุณาใส่รหัสสำหรับการเข้าถึงในหน้าตั้งค่า",
   },
   ChatItem: {
-    ChatItemCount: (count: number) => `${count} messages`,
+    ChatItemCount: (count: number) => `${count} ข้อความ`,
   },
   Chat: {
-    SubTitle: (count: number) => `${count} messages with ChatGPT`,
+    SubTitle: (count: number) => `${count} ข้อความกับ ChatGPT`,
     Actions: {
       ChatList: "ไปยังรายการแชต",
       CompressedHistory: "Compressed History Memory Prompt",
       Export: "Export All Messages as Markdown",
-      Copy: "Copy",
-      Stop: "Stop",
-      Retry: "Retry",
-      Delete: "Delete",
+      Copy: "คัดลอก",
+      Stop: "หยุด",
+      Retry: "ลองใหม่",
+      Delete: "ลบ",
     },
     Rename: "แก้ไขชื่อแชต",
     Typing: "กำลังพิม…",
     Input: (submitKey: string) => {
-      var inputHints = `${submitKey} to send`;
+      var inputHints = `${submitKey} เพื่อส่งข้อความ`;
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += ", Shift + Enter to wrap";
       }
-      return inputHints + ", / to search prompts";
+      return inputHints + ", / เพื่อค้นหา prompts";
     },
     Send: "ส่ง",
     Config: {
-      Reset: "Reset to Default",
+      Reset: "ย้อนกลับไปสู่ค่าตั้งต้น",
       SaveAs: "Save as Mask",
     },
   },
@@ -53,10 +53,10 @@ const th: LocaleType = {
       "Resetting will clear the current conversation history and historical memory. Are you sure you want to reset?",
   },
   Home: {
-    NewChat: "New Chat",
-    DeleteChat: "Confirm to delete the selected conversation?",
-    DeleteToast: "Chat Deleted",
-    Revert: "Revert",
+    NewChat: "สร้างแชตใหม่",
+    DeleteChat: "ยืนยันที่จะลบบทสนทนาที่เลือกใช่ไหม?",
+    DeleteToast: "ลบแชตแล้ว",
+    Revert: "กลับคืน",
   },
   Settings: {
     Title: "การตั้งค่า",
@@ -85,19 +85,19 @@ const th: LocaleType = {
     },
     Avatar: "Avatar",
     FontSize: {
-      Title: "Font Size",
-      SubTitle: "Adjust font size of chat content",
+      Title: "ขนาดตัวหนังสือ",
+      SubTitle: "ปรับขนาดตัวหนังสือของเนื้อหาแชตA",
     },
     Update: {
-      Version: (x: string) => `Version: ${x}`,
-      IsLatest: "Latest version",
-      CheckUpdate: "Check Update",
-      IsChecking: "Checking update...",
-      FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate: "Update",
+      Version: (x: string) => `เวอร์ชั่น: ${x}`,
+      IsLatest: "เวอร์ชั่นล่าสุด",
+      CheckUpdate: "ตรวจสอบการอัพเดท",
+      IsChecking: "กำลังตรวจสอบการอัพเดท...",
+      FoundUpdate: (x: string) => `มีอัพเดทเวอร์ชั่นใหม่: ${x}`,
+      GoToUpdate: "อัพเดท",
     },
-    SendKey: "Send Key",
-    Theme: "Theme",
+    SendKey: "ส่งคีย์",
+    Theme: "ธีม",
     TightBorder: "Tight Border",
     SendPreviewBubble: {
       Title: "Send Preview Bubble",
@@ -109,20 +109,20 @@ const th: LocaleType = {
     },
     Prompt: {
       Disable: {
-        Title: "Disable auto-completion",
+        Title: "ปิด auto-completion",
         SubTitle: "Input / to trigger auto-completion",
       },
-      List: "Prompt List",
+      List: "รายการ Prompt",
       ListCount: (builtin: number, custom: number) =>
         `${builtin} built-in, ${custom} user-defined`,
-      Edit: "Edit",
+      Edit: "แก้ไข",
       Modal: {
-        Title: "Prompt List",
-        Add: "Add One",
-        Search: "Search Prompts",
+        Title: "รายการ Prompt",
+        Add: "เพิ่ม",
+        Search: "ค้นหา Prompts",
       },
       EditModal: {
-        Title: "Edit Prompt",
+        Title: "แก้ไข Prompt",
       },
     },
     HistoryCount: {
@@ -140,18 +140,18 @@ const th: LocaleType = {
       Placeholder: "OpenAI API Key",
     },
     Usage: {
-      Title: "Account Balance",
+      Title: "ยอดคงเหลือ",
       SubTitle(used: any, total: any) {
-        return `Used this month $${used}, subscription $${total}`;
+        return `ใช้งานในเดือนนี้ $${used}, จาก $${total}`;
       },
-      IsChecking: "Checking...",
-      Check: "Check",
-      NoAccess: "Enter API Key to check balance",
+      IsChecking: "กำลังตรวจสอบ...",
+      Check: "ตรวจสอบ",
+      NoAccess: "ใส่ API Key เพื่อเช็คยอดคงเหลือ",
     },
     AccessCode: {
       Title: "Access Code",
-      SubTitle: "Access control enabled",
-      Placeholder: "Need Access Code",
+      SubTitle: "Access control เปิดแล้ว",
+      Placeholder: "ต้องการ Access Code",
     },
     Model: "Model",
     Temperature: {
@@ -192,7 +192,7 @@ const th: LocaleType = {
     Add: "Add a Prompt",
   },
   Plugin: {
-    Name: "Plugin",
+    Name: "ปลั๊กอิน",
   },
   Mask: {
     Name: "Mask",
