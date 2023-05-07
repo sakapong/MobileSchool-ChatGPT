@@ -1,7 +1,7 @@
 import { SubmitKey } from "../store/config";
 import type { LocaleType } from "./index";
 
-const en: LocaleType = {
+const th: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized:
@@ -13,7 +13,7 @@ const en: LocaleType = {
   Chat: {
     SubTitle: (count: number) => `${count} messages with ChatGPT`,
     Actions: {
-      ChatList: "Go To Chat List",
+      ChatList: "ไปยังรายการแชต",
       CompressedHistory: "Compressed History Memory Prompt",
       Export: "Export All Messages as Markdown",
       Copy: "Copy",
@@ -21,8 +21,8 @@ const en: LocaleType = {
       Retry: "Retry",
       Delete: "Delete",
     },
-    Rename: "Rename Chat",
-    Typing: "Typing…",
+    Rename: "แก้ไขชื่อแชต",
+    Typing: "กำลังพิม…",
     Input: (submitKey: string) => {
       var inputHints = `${submitKey} to send`;
       if (submitKey === String(SubmitKey.Enter)) {
@@ -30,18 +30,18 @@ const en: LocaleType = {
       }
       return inputHints + ", / to search prompts";
     },
-    Send: "Send",
+    Send: "ส่ง",
     Config: {
       Reset: "Reset to Default",
       SaveAs: "Save as Mask",
     },
   },
   Export: {
-    Title: "All Messages",
-    Copy: "Copy All",
-    Download: "Download",
-    MessageFromYou: "Message From You",
-    MessageFromChatGPT: "Message From ChatGPT",
+    Title: "ข้อความทั้งหมด",
+    Copy: "คัดลอกทั้งหมด",
+    Download: "ดาวโหลด",
+    MessageFromYou: "ข้อความจากคุณ",
+    MessageFromChatGPT: "ข้อความจาก ChatGPT",
   },
   Memory: {
     Title: "Memory Prompt",
@@ -59,18 +59,18 @@ const en: LocaleType = {
     Revert: "Revert",
   },
   Settings: {
-    Title: "Settings",
-    SubTitle: "All Settings",
+    Title: "การตั้งค่า",
+    SubTitle: "การตั้งค่าทั้งหมด",
     Actions: {
-      ClearAll: "Clear All Data",
-      ResetAll: "Reset All Settings",
-      Close: "Close",
+      ClearAll: "ล้างข้อมูลทั้งหมด",
+      ResetAll: "ตั้งค่าใหม่ทั้งหมด",
+      Close: "ปิด",
       ConfirmResetAll: "Are you sure you want to reset all configurations?",
       ConfirmClearAll: "Are you sure you want to reset all data?",
     },
     Lang: {
       Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
-      All: "All Languages",
+      All: "ภาษาทั้่งหมด",
       Options: {
         cn: "简体中文",
         en: "English",
@@ -169,9 +169,9 @@ const en: LocaleType = {
     },
   },
   Store: {
-    DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
-    Error: "Something went wrong, please try again later.",
+    DefaultTopic: "บทสนทนาใหม่",
+    BotHello: "สวัสดีครับ ฉันจะช่วยเหลือคุณได้อย่างไรบ้างอ่ะ?",
+    Error: "มีบางอย่างผิดพลาด โปรดลองใหม่ในภายหลัง",
     Prompt: {
       History: (content: string) =>
         "This is a summary of the chat history between the AI and the user as a recap: " +
@@ -204,11 +204,11 @@ const en: LocaleType = {
     },
     Item: {
       Info: (count: number) => `${count} prompts`,
-      Chat: "Chat",
-      View: "View",
-      Edit: "Edit",
-      Delete: "Delete",
-      DeleteConfirm: "Confirm to delete?",
+      Chat: "พูดคุย",
+      View: "ดู",
+      Edit: "แก้ไข",
+      Delete: "ลบ",
+      DeleteConfirm: "ยืนยันที่จะลบใช่หรือไม่",
     },
     EditModal: {
       Title: (readonly: boolean) =>
@@ -222,8 +222,8 @@ const en: LocaleType = {
     },
   },
   NewChat: {
-    Return: "Return",
-    Skip: "Skip",
+    Return: "ย้อนกลับ",
+    Skip: "ข้าม",
     Title: "Pick a Mask",
     SubTitle: "Chat with the Soul behind the Mask",
     More: "Find More",
@@ -232,12 +232,12 @@ const en: LocaleType = {
   },
 
   UI: {
-    Confirm: "Confirm",
-    Cancel: "Cancel",
-    Close: "Close",
-    Create: "Create",
-    Edit: "Edit",
+    Confirm: "ยืนยัน",
+    Cancel: "ยกเลิก",
+    Close: "ปิด",
+    Create: "สร้าง",
+    Edit: "แก้ไข",
   },
 };
 
-export default en;
+export default th;

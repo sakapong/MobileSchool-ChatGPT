@@ -78,6 +78,7 @@ const cn = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
+        th: "ภาษาไทย",
       },
     },
     Avatar: "头像",

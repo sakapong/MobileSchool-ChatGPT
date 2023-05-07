@@ -70,8 +70,8 @@ const de: LocaleType = {
       ConfirmClearAll: "Möchten Sie wirklich alle Chats zurücksetzen?",
     },
     Lang: {
-      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
-      All: "All Languages",
+      Name: "Language",
+      All: "所有语言",
       Options: {
         cn: "简体中文",
         en: "English",
@@ -81,6 +81,7 @@ const de: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
+        th: "ภาษาไทย",
       },
     },
     Avatar: "Avatar",

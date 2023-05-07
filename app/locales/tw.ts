@@ -78,6 +78,7 @@ const tw: LocaleType = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
+        th: "ภาษาไทย",
       },
     },
     Avatar: "大頭貼",
