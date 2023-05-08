@@ -385,7 +385,7 @@ export function Settings() {
             </select>
           </ListItem>
 
-          <ListItem title={Locale.Settings.Theme}>
+          {/*           <ListItem title={Locale.Settings.Theme}>
             <select
               value={config.theme}
               onChange={(e) => {
@@ -400,9 +400,9 @@ export function Settings() {
                 </option>
               ))}
             </select>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem title={Locale.Settings.Lang.Name}>
+          {/*           <ListItem title={Locale.Settings.Lang.Name}>
             <select
               value={getLang()}
               onChange={(e) => {
@@ -415,7 +415,7 @@ export function Settings() {
                 </option>
               ))}
             </select>
-          </ListItem>
+          </ListItem> */}
 
           <ListItem
             title={Locale.Settings.FontSize.Title}
